@@ -1,0 +1,8 @@
+# fichier crée par IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# fichier de build
+**/target/
