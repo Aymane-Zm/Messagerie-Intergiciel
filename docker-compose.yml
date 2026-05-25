@@ -22,7 +22,7 @@ services:
   # 2. LibreTranslate
   libretranslate:
     image: libretranslate/libretranslate
-    container_name: translator
+    container_name: per-translate-service
     ports:
       - "5000:5000"
     environment:
@@ -32,7 +32,7 @@ services:
   # 3. La base de données en PostgreSQL
   db:
     image: postgres:15
-    container_name: database
+    container_name: client-cons-db
     ports:
       - "5433:5432"
     environment:
